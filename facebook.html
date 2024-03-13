@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
 		
@@ -7,93 +7,181 @@
 		<style>
 			*{
   margin: 0px;
+  padding: 0px;
 }
-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:blue;
+body{
+  background-image: url(backgroumd.png)
+  background-size:cover;
+  position:relative;
 }
-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sp{
-  width:500px;
+body:: before{
+  position: absolute;
   
+  background-color: white;
+  width:100%;
+  height: 100%;
+  top: -70px;
+  opacity: 0.6;
+}
+form{
+  width:425px;
+  height:500px;
+  margin-top: 5%;
+  margin-left: 35%;
+  box-shadow: 0px 10px 5px 3px white;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+  
+}
+.first_title{
+  font-size: 32px;
+  padding: 10px 10px 0px 10px;
+}
+#sub_title{
+  color: gray; 
+  margin-left: 10px;
+}
+hr{
+  margin-top: 10px;
+  opacity: 20%;
+}
+#all{
+  width: 180px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: #e6e6ee;
+  border: 1px solid #aaa;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+#all1{
+  width: 370px;
+  background-color: #e6e6ee;
+  height: 35px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+  padding-left: 12px;
+  margin-top: 10px;
+}
+.sub_title_2{
+  margin-top: 10px;
+  font-size: 12px;
+}
+select{
+  width:115px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 35px;
+  font-size: 15px;
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.sub_title_3{
+  margin-top: 10px;
+  font-size: 12px;
+}
+#all_gender{
+  width: 110px;
+  height: 25px;
+  border: 1px solid #aaa;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.female{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.male{
+  margin-top: -38px;
+  margin-left: 151px;
+}
+.other{
+  margin-left: : 290px;
+  margin-top: -38px;
+}
+
+.sub_title_4{
+  margin-left: 10px;
+  font-size: 10px;
+  color: #606770;
+  margin-top: 10px;
 }
 .ct{
   text-decoration: none;
+  color: blue;
 }
-#gr{
-  width:130px;
-  height:30px;
-  background-color: green;
-  border-color: green;
-  color:white;
-  border-radius: 7px;
+button{
+	width:110px;
+	height: 30px;
+	background-color: green;
+	border-color: green;
+	color: white;
 }
-#vt{
-  display: flex;
-  justify-content: center;
-  border:1px solid black;
-}
-.only{
+#you{
 	display: flex;
 	justify-content: center;
-	flex-direction:column;
-}
-input{
-	padding:10px 20px ;
-	color:grey;
+	align-items: center;
 
-	
-	opacity: .5;
 }
-.only_h{
-	border:2px solid black;
+#op{
 	display: flex;
-	flex-direction:column;
+	justify-content: center;
+	align-items: center;
 }
-#up{
-	display:flex;
-	justify-content:center;
-}
-#jk{
+#np{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
-	</style>
+#mp{
+	display: flex;
+	justify-content: center;
+}
+		h1{
+				display: flex;
+				justify-content: center;
+				padding-left: 300px;
+				color: blue;
+		}
+		
+		
+		</style>
 </head>
 <body>
-	<div class="only">
-		<div class="only_h">
-
 		<header>
 		<h1>
 				Facebook
 		</h1>
 		</header>
+		<div id="hp">
 		
-		<div>
-				<h2>Creat a new account</h2>
-		</div>
-		<div>
+		<div class="main">
+				
+				<form>
+					<div id="np">
+				<h2>Creat a new account</h2></div>
+				<div id="mp">
 				<p>its quick and easy</p>
-		</div>
-		<hr>
-		
-		<div id="up">	
-		<input type="text" name="name" placeholder="First name"/>		
-<input type="text" name="name" placeholder="Surname"/>
-</div><br><br>
-				<input class="sp"type="text" name="name" placeholder="Mobile no or email address"/><br><br>
-				<input class="sp" type="password" name="name" placeholder="New password"/><br><br>
-		
-		Date of birth<br>
-		<div id="jk">
-		<select name="Date">
+			</div>
+		<hr/>
+						<div class="input">
+								<input type="text" placeholder="First Name" class="first_name" id="all" required/>
+								<input type="text" placeholder="Surname" class="surname" id="all" required/>
+								<br/>
+								<input type="email" placeholder="Mobile number or email address" id="all1" required/>
+								<br>
+								<input type="password" placeholder=" New Password" id="all1" required/>
+								<br>
+						</div>
+						<p class="sub_title_2" id="sub_title">Date of birth</p>
+						
+		<select>
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -127,7 +215,7 @@ input{
 						<option value="31">31</option>
 						<option value="32">32</option>
 		</select>
-				<select name="Date">
+				<select>
 				<option value="January">january</option>
 				<option value="February">february</option>
 				<option value="March">march</option>
@@ -143,7 +231,7 @@ input{
 			<option value="december">december</option>
 
 		</select>
-<select name="Date">
+<select>
 				<option value="1990">1990</option>
 		<option value="1991">1991</option>
 					<option value="1992">1992</option>
@@ -180,33 +268,38 @@ input{
 						<option value="2023">2023</option>
 		<option value="2024">2024</option>
 		<option value="2025">2025</option>
-		</select><br><br>
-	</div>
-		Gender<br>
-		
-		
-				<input type="checkbox" value="female" name="gender" id="101">Female</input>
-		
-		
-				<input type="checkbox" value="male" name="gender" id="102">
-				Male
-		
-		
-				<input type="checkbox" value="custom" name="gender" id="103">
-				Custom
-		
-		<p>People who use our service may have uploaded your contact
-				information to facebook <a class="ct" href="#" >Learn more</a>.
-		</p><br>
-		<p>By clicking sign up you agree to our <a class="ct" href="#">Terms privacy policy</a>
+		</select>
+						<div>
+								
+								Gender<br><br>
+								<label for="1">
+										<input type="radio" value="gender" name="femal" id="1">Female
+										
+								</label>
+								<label for="2">
+										<input type="radio" value="gender" name="male" id="2">Male
+										
+								</label>
+								<label for="4">
+										<input type="radio" value="gender" name="other" id="3">Other
+										
+								</label>
+						</div>		<br>
+						<p>
+								By clicking sign up you agree to our <a class="ct" href="#">Terms privacy policy</a>
 				and <a class="ct" href="#">cookies policy</a> you may receive SMS notification
 				from us and can opt out at may time.
-		</p><br>
-		<button id="gr">Sign Up</button><br><br>
+						</p><br>
+						
+							<div id="you">
+							<button>Sign Up</button><br><br>
+							</div>
+							<div id="op">
 		<a class="ct"href="#">Already have an account?</a><br>
+	</div>
 	
-	</div>
-	</div>
-		
+				</form>
+		</div>
+		</div>
 </body>
 </html>
